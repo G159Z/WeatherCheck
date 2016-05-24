@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar_mie_detail"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="55dp"
+    android:paddingBottom="0dp"
+    android:paddingTop="10dp"
+    app:contentInsetEnd="0dp"
+    app:contentInsetStart="0dp">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pure_black"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/image_toolbar_back"
+            style="@style/btn_toolbar_back"
+            android:background="@drawable/bg_toolbar_action"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/text_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="气象站系统"
+            android:textColor="@color/pure_white"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/icon_toolbar_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="11dp"
+            android:paddingLeft="23dp"
+            android:paddingRight="23dp"
+            android:paddingTop="11dp"
+            android:text="历史"
+            android:background="@drawable/bg_text_more"
+            android:textColor="@color/pure_white"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

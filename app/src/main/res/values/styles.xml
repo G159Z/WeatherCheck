@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="toolbarStyle">@style/layout_base_toolbar</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">@drawable/weather_background</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="layout_base_toolbar" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/pure_black</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:textColor">@color/pure_white</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:height">47dp</item>
+    </style>
+    
+    <style name="layout_show_weather">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/bg_hotline_item</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    
+    <style name="image_show_weather">
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    
+    <style name="text_show_weather">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/pure_black</item>
+    </style>
+
+    <style name="btn_toolbar_back" parent="btn_toolbar">
+        <item name="android:paddingBottom">11dp</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:paddingTop">11dp</item>
+        <item name="android:src">@drawable/ic_toolbar_back</item>
+    </style>
+
+    <style name="btn_toolbar">
+        <item name="android:textColor">@color/pure_white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:background">@drawable/bg_toolbar_action</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.example.tbag.weathercheck"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".component.WeatherCheckApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.BasicActivityDecorated"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".ui.activity.ShowOldWeatherActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <service android:name=".bluetooth.BTService"></service>
+    </application>
+
+</manifest>

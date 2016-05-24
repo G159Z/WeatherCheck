@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:background="@color/gray_f3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_main"/>
+    <RelativeLayout
+        android:id="@+id/layout_temperature"
+        style="@style/layout_show_weather">
+        <ImageView
+            style="@style/image_show_weather"
+            android:background="@drawable/icon_temperture"/>
+        <TextView
+            android:id="@+id/text_temperature"
+            style="@style/text_show_weather"
+            android:text="摄氏温度24C 法式温度50F"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_humidity"
+        style="@style/layout_show_weather">
+        <ImageView
+            style="@style/image_show_weather"
+            android:background="@drawable/icon_humidity"/>
+        <TextView
+            android:id="@+id/text_humidity"
+            style="@style/text_show_weather"
+            android:text="相对湿度为50%"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_pressure"
+        style="@style/layout_show_weather">
+        <ImageView
+            style="@style/image_show_weather"
+            android:background="@drawable/icon_pressure"/>
+        <TextView
+            android:id="@+id/text_pressure"
+            style="@style/text_show_weather"
+            android:text="大气压为1040百帕"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_height"
+        style="@style/layout_show_weather">
+        <ImageView
+            style="@style/image_show_weather"
+            android:background="@drawable/icon_height"/>
+        <TextView
+            android:id="@+id/text_height"
+            style="@style/text_show_weather"
+            android:text="海拔高度为100米"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_rain"
+        style="@style/layout_show_weather"
+        android:layout_marginBottom="15dp">
+        <ImageView
+            style="@style/image_show_weather"
+            android:background="@drawable/icon_rain"/>
+        <TextView
+            android:id="@+id/text_rain"
+            style="@style/text_show_weather"
+            android:text="此时暂无下雨"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/text_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="tip：天气适宜，天气适宜，天气适宜，天气适宜，天气适宜，天气适宜，天气适宜，天气适宜，天气适宜，"
+        android:textColor="@color/pure_black"
+        android:layout_marginLeft="20dp"
+        android:textSize="14sp"/>
+    
+</LinearLayout>
